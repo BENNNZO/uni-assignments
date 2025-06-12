@@ -12,7 +12,7 @@ public class FahrenheitConverter {
         final int FREEZING_POINT = 32;
 
         // Initial temperature in Fahrenheit
-        double fahrenheitTemp = 68;
+        double fahrenheitTemp = 78.6;
 
         // Convert Fahrenheit to Celsius using the formula: C = 5/9 * (F - 32)
         double celciusTemp = 5 / 9.0 * (fahrenheitTemp - FREEZING_POINT);
@@ -29,7 +29,7 @@ public class FahrenheitConverter {
 
     // Prints the Fahrenheit and Celsius values in a formatted way
     static void printResult(double fahrenheit, double celcius) {
-        String formattedOutput = String.format("Fahrenheit: %d %nCelcius: %.1f", fahrenheit, celcius);
+        String formattedOutput = String.format("Fahrenheit: %.1f %nCelcius: %.1f", fahrenheit, celcius);
         System.out.println(formattedOutput);
     }
 }

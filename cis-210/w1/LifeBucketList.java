@@ -4,6 +4,8 @@
 // Week 1 - Programming Assignment
 // Life bucket list
 
+package w1;
+
 public class LifeBucketList {
     public static void main(String[] args) {
         String[] listItems = { // array of list items

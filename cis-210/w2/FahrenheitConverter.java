@@ -12,7 +12,7 @@ public class FahrenheitConverter {
         final int FREEZING_POINT = 32;
 
         // Initial temperature in Fahrenheit
-        double fahrenheitTemp = 78.6;
+        double fahrenheitTemp = 32;
 
         // Convert Fahrenheit to Celsius using the formula: C = 5/9 * (F - 32)
         double celciusTemp = 5 / 9.0 * (fahrenheitTemp - FREEZING_POINT);

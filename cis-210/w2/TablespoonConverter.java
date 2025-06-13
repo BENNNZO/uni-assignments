@@ -1,10 +1,16 @@
+// Benjamin Phillips
+// June 13, 2025
+//
+// Week 2 - Programming Assignment
+// Tablespoon Converter
+
 package w2;
 
 // This class provides functionality to convert teaspoons to tablespoons and leftover teaspoons.
 public class TablespoonConverter {
     public static void main(String[] args) {
         // The initial number of teaspoons to convert.
-        final int INITIAL_TEASPOONS = 16;
+        final int INITIAL_TEASPOONS = 24;
 
         // Convert the initial teaspoons to tablespoons and leftover teaspoons.
         final Measurement RESULT = convertToTablespoons(INITIAL_TEASPOONS);
@@ -17,9 +23,8 @@ public class TablespoonConverter {
     static Measurement convertToTablespoons(int teaspoons) {
         final int TEASPOONS_PER_TABLESPOON = 3;
 
-        // Calculate the number of whole tablespoons.
+        // Calculate the number of whole tablespoons and leftover teaspoons.
         final int TABLESPOONS_NEEDED = teaspoons / TEASPOONS_PER_TABLESPOON;
-        // Calculate the number of leftover teaspoons.
         final int TEASPOONS_LEFTOVER = teaspoons % TEASPOONS_PER_TABLESPOON;
 
         // Return the result as a Measurement record.
@@ -41,7 +46,9 @@ public class TablespoonConverter {
     }
 }
 
-// Record to hold the result of the conversion: number of tablespoons and
-// leftover teaspoons.
+// Record type for: number of tablespoons and leftover teaspoons.
+
+// my formatter moves the bracket to a new line after save so I cant do
+// anything without diabling it :(
 record Measurement(int tablespoons, int leftoverTeaspoons) {
 }

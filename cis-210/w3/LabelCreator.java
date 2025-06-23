@@ -46,6 +46,6 @@ public class LabelCreator {
 
     // Helper method to print the label in a formatted way
     static void printLabel(String firstName, String lastName, String streetAddress, String city, String state, String zipCode, String dateOfBirth) {
-        System.out.printf("\n\n\nName: %s, %s\nAddress: %s, %s, %s %s\nDOB: %s\n", lastName, firstName, streetAddress, city, state, zipCode, dateOfBirth);
+        System.out.printf("\nName: %s, %s\nAddress: %s, %s, %s %s\nDOB: %s\n", lastName, firstName, streetAddress, city, state, zipCode, dateOfBirth);
     }
 }

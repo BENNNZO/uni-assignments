@@ -1,3 +1,9 @@
+// Benjamin Phillips
+// June 22, 2025
+//
+// Week 3 - Programming Assignment
+// Label Creator
+
 package w3;
 
 import java.util.Scanner;

@@ -1,3 +1,9 @@
+// Benjamin Phillips
+// June 29, 2025
+//
+// Week 4 - Programming Assignment
+// House Blueprint
+
 package com.example;
 
 import javafx.application.Application;

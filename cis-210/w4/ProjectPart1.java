@@ -1,3 +1,9 @@
+// Benjamin Phillips
+// June 29, 2025
+//
+// Week 4 - Project Part 1
+// Get First Name
+
 package w4;
 
 import java.util.Scanner;

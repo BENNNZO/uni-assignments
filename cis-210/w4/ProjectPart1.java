@@ -26,7 +26,7 @@ public class ProjectPart1 {
         String firstName = scan.nextLine();
 
         // Remove any characters that are not letters, digits, or spaces
-        firstName = firstName.replaceAll("[^a-zA-Z0-9 ]", "");
+        firstName = firstName.replaceAll("[^a-zA-Z]", "");
         // Trim leading and trailing whitespace
         firstName = firstName.trim();
         // Capitalize the first letter and make the rest lowercase

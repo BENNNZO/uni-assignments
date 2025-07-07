@@ -1,3 +1,9 @@
+// Benjamin Phillips
+// July 6, 2025
+//
+// Week 5 - Programming Assignment
+// Rocket Launch
+
 package w5;
 
 import java.util.Scanner;

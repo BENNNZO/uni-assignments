@@ -1,3 +1,9 @@
+// Benjamin Phillips
+// July 13, 2025
+//
+// Week 6 - Project Part 2
+// Rocket Launch
+
 package w6;
 
 import java.util.Scanner;
@@ -25,6 +31,8 @@ public class Week6ProjectPart2 {
         }
 
         System.out.println("Yay user responded with: " + response); // Print the valid input
+
+        scan.close();
     }
 
     // Method to check if the number is binary (0 or 1)

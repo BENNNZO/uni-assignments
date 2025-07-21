@@ -1,3 +1,8 @@
+// Benjamin Phillips
+// July 20, 2025
+//
+// Week 7 - Programming Assignment
+
 package w7;
 
 public class Test {

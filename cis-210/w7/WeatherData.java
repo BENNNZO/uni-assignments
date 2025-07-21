@@ -1,0 +1,54 @@
+package w7;
+
+public class WeatherData {
+    // CONTRUSTORS AND INIT VARS
+    private double dailyTemp;
+    private int windSpeed;
+
+    public WeatherData() {
+        this.dailyTemp = 0;
+        this.windSpeed = 0;
+    }
+
+    public WeatherData(double dailyTemp, int windSpeed) {
+        this.dailyTemp = dailyTemp;
+        this.windSpeed = windSpeed;
+    }
+
+
+    // GET FUNCTIONS:
+    public double getDailyTemp() {
+        return dailyTemp;
+    }
+
+    public int getWindSpeed() {
+        return windSpeed;
+    }
+
+
+    // SET FUNCTIONS
+    public void setDailyTemp(double dailyTemp) {
+        this.dailyTemp = dailyTemp;
+    }
+
+    public void setWindSpeed(int windSpeed) {
+        if (windSpeed > 0) {
+            this.windSpeed = windSpeed;
+        }
+    }
+
+
+    // OTHER FUNCTIONS
+    public String toString() {
+        return "Weather Data: Daily Temperature = " + this.dailyTemp + " F. Wind Speed = " + this.windSpeed + " mph";
+    }
+
+    public boolean equals(Object o) {
+        if (!(o instanceof WeatherData)) {
+            return false;
+        } else {
+            WeatherData a = (WeatherData) o;
+            return this.dailyTemp == a.dailyTemp && this.windSpeed == a.windSpeed;
+        }
+    }
+}

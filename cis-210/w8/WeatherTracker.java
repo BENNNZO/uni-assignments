@@ -4,6 +4,11 @@
 // Week 8 - Programming Assignment
 // Weather Tracker
 
+// This program provides a simple command-line interface for tracking daily weather data,
+// specifically wind speed and temperature, for up to 10 days. Users can input new weather data,
+// display all recorded data, sort and display data by temperature, search for records by wind speed,
+// and exit the application. The data is managed using the WeatherData class.
+
 package w8;
 
 import java.util.Scanner;

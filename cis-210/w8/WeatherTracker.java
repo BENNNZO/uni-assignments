@@ -9,7 +9,6 @@ package w8;
 import java.util.Scanner;
 import java.util.Arrays;
 
-
 // Represents daily weather data with wind speed and temperature.
 class WeatherData {
     private int windSpeed;
@@ -39,11 +38,12 @@ public class WeatherTracker {
     // CLI interface for weather tracking.
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        WeatherData[] data = new WeatherData[10];
-        int count = 0;
+        WeatherData[] data = new WeatherData[10]; // Array to store weather data
+        int count = 0; // Number of records
         int choice;
 
         do {
+            // Display menu
             System.out.println("\nWelcome to the NOAA Weather Tracker.");
             System.out.println("Menu Options");
             System.out.println("1) Input new daily weather data");
@@ -56,6 +56,7 @@ public class WeatherTracker {
 
             switch (choice) {
                 case 1:
+                    // Input new weather data
                     if (count >= 10) {
                         System.out.println("Maximum of 10 days recorded.");
                         break;
@@ -71,6 +72,7 @@ public class WeatherTracker {
                     break;
 
                 case 2:
+                    // Display all recorded data
                     System.out.println("Current Weather Data Table");
                     System.out.println("Day Wind Speed (mph) Daily Temperature (F)");
                     for (int i = 0; i < count; i++) {
@@ -79,9 +81,11 @@ public class WeatherTracker {
                     break;
 
                 case 3:
+                    // Display data sorted by temperature
                     System.out.println("Sorted Weather Data Table [by Temperature]");
                     System.out.println("Day Wind Speed (mph) Daily Temperature (F)");
                     WeatherData[] sorted = Arrays.copyOf(data, count);
+                    // Sort descending by temperature
                     for (int i = 0; i < sorted.length - 1; i++) {
                         for (int j = i + 1; j < sorted.length; j++) {
                             if (sorted[i].getTemperature() < sorted[j].getTemperature()) {
@@ -91,6 +95,7 @@ public class WeatherTracker {
                             }
                         }
                     }
+                    // Print sorted data with original day
                     for (int i = 0; i < sorted.length; i++) {
                         int originalDay = -1;
                         for (int j = 0; j < count; j++) {
@@ -104,6 +109,7 @@ public class WeatherTracker {
                     break;
 
                 case 4:
+                    // Search for wind speed
                     System.out.print("Please enter selected wind speed criteria (in mph): ");
                     int searchSpeed = scanner.nextInt();
                     System.out.println("Weather Data Table Search Results");
@@ -116,10 +122,12 @@ public class WeatherTracker {
                     break;
 
                 case 5:
+                    // Quit application
                     System.out.println("Quit selected. Exiting Application.");
                     break;
 
                 default:
+                    // Invalid option
                     System.out.println("Invalid option. Try again.");
             }
 

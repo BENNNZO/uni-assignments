@@ -1,3 +1,9 @@
+// Benjamin Phillips
+// July 6, 2025
+//
+// Week 8 - Project
+// Binary Checker
+
 package w8;
 
 import java.util.Scanner;
